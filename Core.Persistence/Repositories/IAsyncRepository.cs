@@ -25,6 +25,11 @@ namespace Core.Persistence.Repositories
                                         int index = 0, int size = 10, bool enableTracking = true,
                                         CancellationToken cancellationToken = default);
 
+        Task<IPaginate<T>> GetListByDynamicAsync(Dynamic.Dynamic dynamic,
+                                         Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null,
+                                         int index = 0, int size = 10, bool enableTracking = true,
+                                         CancellationToken cancellationToken = default);
+
 
     }
 }

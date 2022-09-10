@@ -2,7 +2,7 @@
 {
     public class ProgramLanguageGetByIdDto
     {
-        public int LanguageId { get; set; }
+        public int Id { get; set; }
 
         public string LanguageName { get; set; }
     }

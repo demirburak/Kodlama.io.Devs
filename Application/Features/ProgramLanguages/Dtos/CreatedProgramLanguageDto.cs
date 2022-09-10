@@ -8,7 +8,7 @@ namespace Application.Features.ProgramLanguages.Dtos
 {
     public class CreatedProgramLanguageDto
     {
-        public int LanguageId { get; set; }
+        public int Id { get; set; }
 
         public string LanguageName { get; set; }
     }

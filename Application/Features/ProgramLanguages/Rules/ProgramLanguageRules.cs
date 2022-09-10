@@ -33,7 +33,7 @@ namespace Application.Features.ProgramLanguages.Rules
 
         public async Task LanguageNameCannotBeDublicatedWhenUpdated(string name, int id)
         {
-            IPaginate<ProgramLanguage> results = await _programLanguageRepository.GetListAsync(x => x.LanguageName == name && x.LanguageId != id);
+            IPaginate<ProgramLanguage> results = await _programLanguageRepository.GetListAsync(x => x.LanguageName == name && x.Id != id);
             if (results.Count != 0) throw new BusinessException(ProgramLanguageMessages.PLNameExists);
         }
 

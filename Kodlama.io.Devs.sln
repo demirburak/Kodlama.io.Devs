@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{FEA75837-658C-4DF4-B4DA-A9CE245FD128}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{FEA75837-658C-4DF4-B4DA-A9CE245FD128}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{8F179106-E94A-4E15-9F69-DB0D4397669A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{8F179106-E94A-4E15-9F69-DB0D4397669A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{E5FD4C2D-D773-4221-8B39-1D459A918378}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{E5FD4C2D-D773-4221-8B39-1D459A918378}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{11842D57-1DCF-4BF5-9291-CE1681D03F2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{11842D57-1DCF-4BF5-9291-CE1681D03F2B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{20506BBB-0F24-458A-AA5F-B31E66E235AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Persistence", "Core.Persistence\Core.Persistence.csproj", "{AD7DB780-3D57-47D6-80AA-3233F39904F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Persistence", "Core.Persistence\Core.Persistence.csproj", "{AD7DB780-3D57-47D6-80AA-3233F39904F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Application", "Core.Application\Core.Application.csproj", "{4ADED0EA-99BF-45AD-8888-8629F490B3B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.Application", "Core.Application\Core.Application.csproj", "{4ADED0EA-99BF-45AD-8888-8629F490B3B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.CrossCuttingConcern", "Core.CrossCuttingConcern\Core.CrossCuttingConcern.csproj", "{94A51C6F-27EF-4858-A1FA-F9B83A8F2D89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.CrossCuttingConcern", "Core.CrossCuttingConcern\Core.CrossCuttingConcern.csproj", "{94A51C6F-27EF-4858-A1FA-F9B83A8F2D89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Security", "Core.Security\Core.Security.csproj", "{02D6F000-742A-44FF-96F3-A4B306027A25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{94A51C6F-27EF-4858-A1FA-F9B83A8F2D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94A51C6F-27EF-4858-A1FA-F9B83A8F2D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94A51C6F-27EF-4858-A1FA-F9B83A8F2D89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02D6F000-742A-44FF-96F3-A4B306027A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02D6F000-742A-44FF-96F3-A4B306027A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02D6F000-742A-44FF-96F3-A4B306027A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02D6F000-742A-44FF-96F3-A4B306027A25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +67,7 @@ Global
 		{AD7DB780-3D57-47D6-80AA-3233F39904F9} = {20506BBB-0F24-458A-AA5F-B31E66E235AE}
 		{4ADED0EA-99BF-45AD-8888-8629F490B3B8} = {20506BBB-0F24-458A-AA5F-B31E66E235AE}
 		{94A51C6F-27EF-4858-A1FA-F9B83A8F2D89} = {20506BBB-0F24-458A-AA5F-B31E66E235AE}
+		{02D6F000-742A-44FF-96F3-A4B306027A25} = {20506BBB-0F24-458A-AA5F-B31E66E235AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C2931A1E-5633-41ED-8B54-79536C5BCC8A}

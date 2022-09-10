@@ -17,4 +17,9 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Authentication\Queries\" />
+    <Folder Include="Features\UserProfiles\" />
+  </ItemGroup>
+
 </Project>
