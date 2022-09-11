@@ -13,5 +13,7 @@ namespace Application.Features.Authentication.Constants
         public static string EmailDoesNotExist = "Email does not exist.";
 
         public static string ThereIsAnErrorWhenUserCreating = "There is an error when user creating.";
+
+        public static string EmailOrPasswordCannotBeEmpty = "Email or password can not be empty.";
     }
 }

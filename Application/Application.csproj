@@ -18,7 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Authentication\Queries\" />
     <Folder Include="Features\UserProfiles\" />
   </ItemGroup>
 

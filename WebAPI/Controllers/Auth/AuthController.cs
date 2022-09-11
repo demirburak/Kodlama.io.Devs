@@ -1,5 +1,6 @@
 ﻿using Application.Features.Authentication.Commands;
 using Application.Features.Authentication.Dtos;
+using Application.Features.Authentication.Queries;
 using Application.Features.Models.Queries.GetListModelByDynamic;
 using Application.Features.Techs.Commands;
 using Application.Features.Techs.Dtos;
@@ -29,6 +30,13 @@ namespace WebAPI.Controllers.Auth
             return Created("", registerUserDto);
         }
 
+
+        [HttpPost("Login")]
+        public async Task<IActionResult> LoginAsync([FromBody] LoginRequestQuery loginRequestQuery)
+        {
+            LoginResultDto loginResultDto = await Mediator.Send(loginRequestQuery);
+            return Ok(loginResultDto);
+        }
 
     }
 }

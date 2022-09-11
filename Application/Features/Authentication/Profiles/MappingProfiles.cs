@@ -5,6 +5,7 @@ using Application.Features.Techs.Models;
 using AutoMapper;
 using Core.Persistence.Paging;
 using Core.Security.Entities;
+using Core.Security.JWT;
 using Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,9 @@ namespace Application.Features.Authentication.Profiles
         public MappingProfiles()
         {
             CreateMap<RegistrationDto, User>().ReverseMap();
+            CreateMap<AccessToken, LoginResultDto>()
+                .ForMember(l => l.IsSuccess, opt => opt.MapFrom(src => !string.IsNullOrEmpty(src.Token)))
+                .ReverseMap();
 
         }
     }
