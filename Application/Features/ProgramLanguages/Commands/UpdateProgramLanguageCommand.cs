@@ -9,7 +9,7 @@ namespace Application.Features.ProgramLanguages.Commands
 {
     public class UpdateProgramLanguageCommand : IRequest<UpdatedProgramLanguageDto>
     {
-        public int LanguageId { get; set; }
+        public int Id { get; set; }
 
         public string LanguageName { get; set; }
 
@@ -30,7 +30,7 @@ namespace Application.Features.ProgramLanguages.Commands
 
         public async Task<UpdatedProgramLanguageDto> Handle(UpdateProgramLanguageCommand request, CancellationToken cancellationToken)
         {
-            await _programLanguageRules.LanguageNameCannotBeDublicatedWhenUpdated(request.LanguageName, request.LanguageId);
+            await _programLanguageRules.LanguageNameCannotBeDublicatedWhenUpdated(request.LanguageName, request.Id);
 
             ProgramLanguage programLanguage = await _programLanguageRepository.UpdateAsync(_mapper.Map<ProgramLanguage>(request));
             UpdatedProgramLanguageDto UpdatedProgramLanguageDto = _mapper.Map<UpdatedProgramLanguageDto>(programLanguage);

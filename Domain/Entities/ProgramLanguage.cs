@@ -14,5 +14,7 @@ namespace Domain.Entities
 
 
         public virtual ICollection<Tech> Teches { get; set; }
+
+
     }
 }

@@ -9,7 +9,7 @@ namespace Application.Features.ProgramLanguages.Commands
 {
     public class DeleteProgramLanguageCommand : IRequest<DeletedProgramLanguageDto>
     {
-        public int LanguageId { get; set; }
+        public int Id { get; set; }
 
     }
 
